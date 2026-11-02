@@ -1,4 +1,4 @@
-/* ====== COLORES Y LETRAS (cambiá acá y se cambia en toda la tarjeta) ====== */
+/* ====== COLORES Y LETRAS ====== */
 :root {
   --dorado: #c7a96b;
   --verde: #a8b5a1;
@@ -22,7 +22,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ====== SOBRE VIRTUAL / PANTALLA INICIAL (blanca, letras negras) ====== */
+/* ====== PANTALLA INICIAL ====== */
 #sobre {
   position: fixed;
   inset: 0;
@@ -33,7 +33,7 @@ body {
   justify-content: center;
   text-align: center;
   padding: 24px;
-  background: url("portada.jpg") center/cover no-repeat, #ffffff;
+  background: #ffffff;
 }
 
 #sobre .e {
@@ -66,7 +66,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* ====== TARJETA PRINCIPAL (beige con borde dorado) ====== */
+/* ====== TARJETA PRINCIPAL ====== */
 .card {
   max-width: 460px;
   margin: 0 auto;
@@ -106,7 +106,7 @@ body {
   line-height: 1.2;
 }
 
-/* ====== ESPACIO ENTRE SECCIONES ====== */
+/* ====== ESPACIOS ====== */
 .bloque {
   margin-top: 46px;
 }
@@ -115,7 +115,7 @@ body {
   margin-bottom: 18px;
 }
 
-/* ====== CUADROS DE 15 Y 18 (con fotos) ====== */
+/* ====== CUADROS DE 15 Y 18 ====== */
 .duo {
   display: flex;
   gap: 14px;
@@ -140,12 +140,14 @@ body {
   z-index: 1;
 }
 
+/* Esta es la parte que arregla la foto de Facu */
 .foto-cuadro {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 75% 20%;
   opacity: 0;
   transition: opacity 1s ease;
 }
@@ -196,7 +198,7 @@ body {
   text-shadow: 0 2px 8px rgba(0, 0, 0, .7);
 }
 
-/* ====== GALERÍA GRANDE AUTOMÁTICA ====== */
+/* ====== GALERÍA GRANDE ====== */
 .fotos {
   position: relative;
   height: 250px;
@@ -212,6 +214,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 25%;
   opacity: 0;
   transition: opacity 1.2s ease;
 }
@@ -258,7 +261,7 @@ body {
   }
 }
 
-/* ====== CUENTA REGRESIVA (cajas verdes) ====== */
+/* ====== CUENTA REGRESIVA ====== */
 .cuenta {
   display: flex;
   gap: 8px;
@@ -291,7 +294,7 @@ body {
   margin-top: 12px;
 }
 
-/* ====== FECHA, LUGAR Y GOOGLE MAPS ====== */
+/* ====== FECHA, LUGAR Y MAPS ====== */
 .lugar-bloque {
   padding: 26px 16px;
   border-radius: 20px;
@@ -426,7 +429,7 @@ body {
   font-size: 36px;
 }
 
-/* ====== BOTÓN DE MÚSICA (⏹️ / ▶️) ====== */
+/* ====== BOTÓN DE MÚSICA ====== */
 .musica-btn {
   position: fixed;
   right: 14px;
